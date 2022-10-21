@@ -1,12 +1,27 @@
 public class Main {
     public static void main(String[] args) {
+        //PARTE 1
         suma(10,20,30);
+        //PARTE 2
+        coche micoche = new coche();
+        micoche.sumarpuerta();
+        System.out.println(micoche.puertas);
 
         }
+        //PARTE 1
         public static void suma(int u , int w, int v){
         int resultado;
         resultado = u+v+w;
             System.out.println(resultado);
 
     }
+}
+//PARTE 2
+class coche{
+    public int puertas = 2;
+
+    public void sumarpuerta(){
+        this.puertas++;
+    }
+
 }
